@@ -5,12 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
-
 import IMCSSpring.EmployeeSpringMVC.Model.Employee;
 
-//@Component
 public class DBQueryExecution {
 
 	public Employee getEmployeeRecords(Integer empNo) {
@@ -43,4 +39,5 @@ public class DBQueryExecution {
 			return null;
 		}
 	}
+
 }

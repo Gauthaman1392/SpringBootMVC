@@ -6,7 +6,6 @@ import IMCSSpring.EmployeeSpringMVC.Model.Employee;
 
 public class EmployeeOperationsImpl implements EmployeeOperations {
 	
-	//@Autowired
 	DBQueryExecution query = new DBQueryExecution();
 
 	@Override
@@ -16,5 +15,7 @@ public class EmployeeOperationsImpl implements EmployeeOperations {
 		return query.getEmployeeRecords(empNo);
 		
 	}
+
+	
 
 }

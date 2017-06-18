@@ -1,16 +1,38 @@
 package IMCSSpring.EmployeeSpringMVC.Model;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 import org.springframework.stereotype.Component;
 
 @Component
 public class Employee {
+	
+    @Size(min=2, max=30)
 	private String firstName;
+    
 	private String lastName;
 	private String deptName;
 	private String gender;
 	private double salary;
-	private int number;
 	
+	@NotNull
+	private int number;
+	private String hireDate;
+	private String birthdate;
+	
+	public String getHireDate() {
+		return hireDate;
+	}
+	public void setHireDate(String hireDate) {
+		this.hireDate = hireDate;
+	}
+	public String getBirthdate() {
+		return birthdate;
+	}
+	public void setBirthdate(String birthdate) {
+		this.birthdate = birthdate;
+	}
 	public int getNumber() {
 		return number;
 	}
