@@ -2,26 +2,27 @@ package IMCSSpring.EmployeeSpringMVC.Model;
 
 import java.util.Date;
 
-public class Employee {
+public class EmployeeInfo {
 	private String firstName;
 	private String lastName;
+	private String deptName;
 	private String gender;
+	private double salary;
 	private int number;
 	private Date birthDate;
 	private Date hireDate;
 	
-
-	public Date getHireDate() {
-		return hireDate;
-	}
-	public void setHireDate(Date hireDate) {
-		this.hireDate = hireDate;
-	}
 	public Date getBirthDate() {
 		return birthDate;
 	}
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
+	}
+	public Date getHireDate() {
+		return hireDate;
+	}
+	public void setHireDate(Date hireDate) {
+		this.hireDate = hireDate;
 	}
 	public int getNumber() {
 		return number;
@@ -41,14 +42,22 @@ public class Employee {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
+	public String getDeptName() {
+		return deptName;
+	}
+	public void setDeptName(String deptName) {
+		this.deptName = deptName;
+	}
 	public String getGender() {
 		return gender;
 	}
 	public void setGender(String string) {
 		this.gender = string;
 	}
-	
-	
-	
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
 }
